@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website/app content updates: update the Our Team section across all pages where team members are mentioned.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-the-our-team-member-names-by-replacing-priya-sharma-with-prayag-dhole-and-replacing-rajesh-kumar-with-sagar-dhole-anywhere-these-team-members-are-displayed-in-the-ui-including-the-ourteamsection-component-data",
+      "title": "Update the Our Team member names by replacing \"Priya Sharma\" with \"Prayag Dhole\" and replacing \"Rajesh Kumar\" with \"Sagar Dhole\" anywhere these team members are displayed in the UI (including the OurTeamSection component data).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-our-team-section-content-is-consistently-updated-anywhere-a-team-section-is-shown-on-any-page-so-all-pages-that-include-a-team-section-display-the-updated-member-names",
+      "title": "Ensure the Our Team section content is consistently updated anywhere a team section is shown on any page, so all pages that include a team section display the updated member names.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update Our Team section across all pages: replace Priya Sharma with Prayag Dhole and Rajesh Kumar with Sagar Dhole wherever team members are mentioned",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Update Our Team section names across the site",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

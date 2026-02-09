@@ -1,2 +1,3 @@
-# pest-control-star-solutions
-Exported from Caffeine project: Update Our Team section names across the site
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
