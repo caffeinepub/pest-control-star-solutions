@@ -2,28 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-our-team-member-names-by-replacing-priya-sharma-with-prayag-dhole-and-replacing-rajesh-kumar-with-sagar-dhole-anywhere-these-team-members-are-displayed-in-the-ui-including-the-ourteamsection-component-data",
-      "featureTitle": "Update the Our Team member names by replacing \"Priya Sharma\" with \"Prayag Dhole\" and replacing \"Rajesh Kumar\" with \"Sagar Dhole\" anywhere these team members are displayed in the UI (including the OurTeamSection component data).",
+      "featureId": "feature-update-the-home-page-our-team-section-so-the-team-member-currently-shown-as-amit-patel-is-displayed-as-yash-gorivale",
+      "featureTitle": "Update the Home page \"Our Team\" section so the team member currently shown as \"Amit Patel\" is displayed as \"Yash Gorivale\".",
       "files": [
-        "frontend/src/components/home/OurTeamSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-ensure-the-our-team-section-content-is-consistently-updated-anywhere-a-team-section-is-shown-on-any-page-so-all-pages-that-include-a-team-section-display-the-updated-member-names",
-      "featureTitle": "Ensure the Our Team section content is consistently updated anywhere a team section is shown on any page, so all pages that include a team section display the updated member names.",
-      "files": [
-        "frontend/src/components/home/OurTeamSection.tsx",
         "frontend/src/config/team.ts"
       ],
       "components": [
@@ -34,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-2"
+        "REQ-3"
       ],
       "confidence": "high"
     }

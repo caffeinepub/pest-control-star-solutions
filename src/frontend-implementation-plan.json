@@ -1,41 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update Our Team member names across the UI",
+  "title": "Update Our Team member name on Home page",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Replace the displayed Our Team member names (Priya Sharma → Prayag Dhole, Rajesh Kumar → Sagar Dhole) anywhere they appear in the UI, including OurTeamSection data.",
+      "id": "REQ-3",
+      "summary": "Replace the Our Team member name \"Amit Patel\" with \"Yash Gorivale\" using the shared team member data source so the Home page reflects the change without component hardcoding.",
       "acceptanceCriteria": [
-        "In the rendered Our Team section, the member previously shown as \"Priya Sharma\" is now displayed as \"Prayag Dhole\".",
-        "In the rendered Our Team section, the member previously shown as \"Rajesh Kumar\" is now displayed as \"Sagar Dhole\".",
-        "There are no remaining occurrences of the strings \"Priya Sharma\" or \"Rajesh Kumar\" in user-visible team member listings/cards."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/home/OurTeamSection.tsx",
-          "operation": "modify",
-          "description": "Update the hardcoded team member names: replace \"Rajesh Kumar\" with \"Sagar Dhole\" and replace \"Priya Sharma\" with \"Prayag Dhole\" in the teamMembers data used to render team cards."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Ensure every page that renders a team section shows the updated names consistently (no page shows old names).",
-      "acceptanceCriteria": [
-        "Every page/route that renders a team section shows the updated names (\"Prayag Dhole\" and \"Sagar Dhole\").",
-        "No page that includes a team section shows the old names."
+        "In the Home page \"Our Team\" section, the card that previously displayed the name \"Amit Patel\" now displays \"Yash Gorivale\".",
+        "No instances of the name \"Amit Patel\" remain in the Our Team data used by the Home page.",
+        "The change is implemented in the shared team member data source (frontend/src/config/team.ts) so the rendered OurTeamSection component reflects the updated name without hardcoding in the component."
       ],
       "file_operations": [
         {
           "path": "frontend/src/config/team.ts",
-          "operation": "create",
-          "description": "Create a single shared team data source exporting the Our Team member list with the updated names (\"Prayag Dhole\" and \"Sagar Dhole\") so all team sections across the app can reference the same content."
-        },
-        {
-          "path": "frontend/src/components/home/OurTeamSection.tsx",
           "operation": "modify",
-          "description": "Refactor OurTeamSection to import team member data from frontend/src/config/team.ts (instead of local hardcoding) to guarantee consistent names wherever the team section is used."
+          "description": "Update the relevant TeamMember entry in the exported teamMembers array by changing name from \"Amit Patel\" to \"Yash Gorivale\", leaving role/title, image, and ordering unchanged."
         }
       ]
     }

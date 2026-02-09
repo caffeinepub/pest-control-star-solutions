@@ -1,24 +1,18 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Website/app content updates: update the Our Team section across all pages where team members are mentioned.",
+  "summary": "New project",
   "architectural_notes": [],
-  "known_issues": [],
-  "isFixRequest": false,
+  "known_issues": [
+    "Homepage 'Our Team' section still shows 'Amit Patel' instead of updated name 'Yash Gorivale' (changes not reflected)."
+  ],
+  "isFixRequest": true,
   "existing_features": [
     {
-      "id": "feature-update-the-our-team-member-names-by-replacing-priya-sharma-with-prayag-dhole-and-replacing-rajesh-kumar-with-sagar-dhole-anywhere-these-team-members-are-displayed-in-the-ui-including-the-ourteamsection-component-data",
-      "title": "Update the Our Team member names by replacing \"Priya Sharma\" with \"Prayag Dhole\" and replacing \"Rajesh Kumar\" with \"Sagar Dhole\" anywhere these team members are displayed in the UI (including the OurTeamSection component data).",
+      "id": "feature-update-the-home-page-our-team-section-so-the-team-member-currently-shown-as-amit-patel-is-displayed-as-yash-gorivale",
+      "title": "Update the Home page \"Our Team\" section so the team member currently shown as \"Amit Patel\" is displayed as \"Yash Gorivale\".",
       "reqIds": [
-        "REQ-1"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-ensure-the-our-team-section-content-is-consistently-updated-anywhere-a-team-section-is-shown-on-any-page-so-all-pages-that-include-a-team-section-display-the-updated-member-names",
-      "title": "Ensure the Our Team section content is consistently updated anywhere a team section is shown on any page, so all pages that include a team section display the updated member names.",
-      "reqIds": [
-        "REQ-2"
+        "REQ-3"
       ],
       "version": 1
     }
@@ -26,12 +20,12 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Update Our Team section across all pages: replace Priya Sharma with Prayag Dhole and Rajesh Kumar with Sagar Dhole wherever team members are mentioned",
+      "summary": "Update Home page 'Our Team' section to display 'Yash Gorivale' instead of 'Amit Patel'",
       "reqIds": [],
       "status": "pending"
     }
   ],
-  "projectName": "Update Our Team section names across the site",
+  "projectName": "Update Home page Our Team member name to Yash Gorivale",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

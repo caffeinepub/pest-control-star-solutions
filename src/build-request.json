@@ -1,67 +1,37 @@
 {
   "kind": "build_request",
-  "title": "Update Our Team section names across the site",
+  "title": "Update Home page Our Team member name to Yash Gorivale",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-1",
-      "text": "Update the Our Team member names by replacing \"Priya Sharma\" with \"Prayag Dhole\" and replacing \"Rajesh Kumar\" with \"Sagar Dhole\" anywhere these team members are displayed in the UI (including the OurTeamSection component data).",
+      "id": "REQ-3",
+      "text": "Update the Home page \"Our Team\" section so the team member currently shown as \"Amit Patel\" is displayed as \"Yash Gorivale\".",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-3",
-          "msg-5"
+          "msg-9"
         ],
         "quotes": [
-          "Priya Sharma team member replace with Prayag dhole",
-          "Rajesh Kumar team member replace with Sagar dhole"
+          "on home page Our Team section"
         ]
       },
       "acceptanceCriteria": [
-        "In the rendered Our Team section, the member previously shown as \"Priya Sharma\" is now displayed as \"Prayag Dhole\".",
-        "In the rendered Our Team section, the member previously shown as \"Rajesh Kumar\" is now displayed as \"Sagar Dhole\".",
-        "There are no remaining occurrences of the strings \"Priya Sharma\" or \"Rajesh Kumar\" in user-visible team member listings/cards."
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "text": "Ensure the Our Team section content is consistently updated anywhere a team section is shown on any page, so all pages that include a team section display the updated member names.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-7"
-        ],
-        "quotes": [
-          "Our Team section in all pages where team mention"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Every page/route that renders a team section shows the updated names (\"Prayag Dhole\" and \"Sagar Dhole\").",
-        "No page that includes a team section shows the old names."
+        "In the Home page \"Our Team\" section, the card that previously displayed the name \"Amit Patel\" now displays \"Yash Gorivale\".",
+        "No instances of the name \"Amit Patel\" remain in the Our Team data used by the Home page.",
+        "The change is implemented in the shared team member data source (frontend/src/config/team.ts) so the rendered OurTeamSection component reflects the updated name without hardcoding in the component."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/components/ui or any other paths listed as immutable in SYSTEM_CONTEXT.",
-    "Keep the backend as-is (no new Motoko logic/state) since this is a static content update."
+    "Do not modify any files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT.",
+    "Keep backend unchanged; no new canisters or backend APIs are needed for this static UI content update."
   ],
   "nonGoals": [
-    "Do not change team member roles/titles unless required for name replacement.",
-    "Do not change team member images/photos unless explicitly requested.",
-    "Do not add new pages, routes, or backend APIs for team management."
+    "Do not change the team member role/title, image, or ordering unless explicitly requested.",
+    "Do not add new team members or redesign the Our Team section layout."
   ],
   "imageRequirements": {
     "required": [],
     "edits": []
-  },
-  "userProfileUpdate": {
-    "goalsToAdd": [],
-    "goalsToRemove": [],
-    "preferencesToAdd": [],
-    "preferencesToRemove": [],
-    "miscToAdd": [],
-    "miscToRemove": [],
-    "fieldsToSet": {},
-    "fieldsToDelete": []
   }
 }

@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 3,
-    name: 'Amit Patel',
+    name: 'Yash Gorivale',
     role: 'Technical Lead',
     image: '/assets/generated/team-3.dim_800x800.png',
   },
